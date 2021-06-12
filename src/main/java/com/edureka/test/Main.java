@@ -10,6 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         WebDriver browser;
+        System.setProperty("webdriver.chrome.driver", "/home/ubuntu/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
         browser = new ChromeDriver(options);
