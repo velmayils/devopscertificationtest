@@ -15,7 +15,7 @@ public class Main {
         options.setHeadless(true);
         browser = new ChromeDriver(options);
         browser.get("http://52.66.5.1:8081/index.php");
-        WebElement button = browser.findElement(By.id("about"));
+        WebElement button = browser.findElement(By.id("About Us"));
         assert(button.isDisplayed());
         System.out.println("Button about is there: " + button.isDisplayed());
         button.click();
